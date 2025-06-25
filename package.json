@@ -7,7 +7,7 @@
   "type": "commonjs",
   "main": "servor.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "bcrypt": "^6.0.0",

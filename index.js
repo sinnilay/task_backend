@@ -1,5 +1,5 @@
 const app = require("./app");
-const { sequelize } = require("./models");
+const { sequelize } = require("./models/indexx");
 const PORT = process.env.PORT || 5000;
 
 sequelize.sync().then(() => {
