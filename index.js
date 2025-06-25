@@ -32,11 +32,11 @@ sequelize.sync()
   });
 
   
-  // const PORT = process.env.PORT || 5000;
-  // app.listen(PORT, () => {
-  //   console.log(`🚀 Local server running at http://localhost:${PORT}`);
-  // });
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, () => {
+    console.log(`🚀 Local server running at http://localhost:${PORT}`);
+  });
 
 
 // Export for Vercel
-module.exports = serverless(app);
+// module.exports = serverless(app);
