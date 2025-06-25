@@ -1,5 +1,5 @@
 const { sequelize } = require("./models/indexx");
-const serverless = require("serverless-http");
+// const serverless = require("serverless-http");
 
 const express = require("express");
 const cors = require("cors");
@@ -31,12 +31,12 @@ sequelize.sync()
     console.error("Database connection failed:", err);
   });
 
-  if (process.env.LOCAL === "true") {
+  
   const PORT = process.env.PORT || 5000;
   app.listen(PORT, () => {
     console.log(`🚀 Local server running at http://localhost:${PORT}`);
   });
-}
+
 
 // Export for Vercel
-module.exports = serverless(app);
+// module.exports = serverless(app);
